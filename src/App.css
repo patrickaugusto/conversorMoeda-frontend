@@ -30,9 +30,17 @@ input, select, button {
 .campoConversao {
   display: flex;
   align-items: center;
-  gap: 10px; 
-  margin-bottom: 15px;
+  gap: 10px;
+  margin: 10px 0;
 }
+
+input[type="text"]:disabled {
+  background-color: #f1f1f1;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
 
 button {
   background-color: #007bff;
