@@ -5,26 +5,23 @@
   align-items: center;
   min-height: 100vh;
   text-align: center;
-  background-color: #f4f4f4; 
+  padding: 20px;
 }
+
+
 
 form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  border-radius: 8px;
+  padding: 25px;
+  border-radius: 10px;
   background-color: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-input, select, button {
-  padding: 10px;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
 }
 
 .campoConversao {
@@ -32,33 +29,56 @@ input, select, button {
   align-items: center;
   gap: 10px;
   margin: 10px 0;
+  width: 100%;
 }
 
-input[type="text"]:disabled {
-  background-color: #f1f1f1;
-  color: #333;
-  border: 1px solid #ccc;
-  padding: 5px;
+input, select, button {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  width: 100%;
 }
 
+input, select {
+  background-color: #f8f9fa;
+  transition: all 0.3s ease;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
 
 button {
   background-color: #007bff;
   color: white;
   cursor: pointer;
-  width: 200px;
+  width: 50%;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
   background-color: #0056b3;
 }
 
+input[type="text"]:disabled {
+  background-color: #e9ecef;
+  color: #495057;
+  border: 1px solid #ced4da;
+}
+
 .resultado {
   margin-top: 20px;
+  font-size: 1.2rem;
+  color: #495057;
 }
 
 .ultima-atualizacao {
   margin-top: 10px;
-  font-size: 0.9rem;
-  color: gray;
+  font-size: 0.85rem;
+  color: #6c757d;
 }
