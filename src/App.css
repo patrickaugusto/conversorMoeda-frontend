@@ -1,0 +1,56 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  background-color: #f4f4f4; 
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input, select, button {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.campoConversao {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  width: 200px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.resultado {
+  margin-top: 20px;
+}
+
+.ultima-atualizacao {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: gray;
+}
