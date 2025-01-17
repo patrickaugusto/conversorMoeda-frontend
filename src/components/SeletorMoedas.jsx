@@ -24,12 +24,12 @@ function SeletorMoedas({ moedas, selected, onChange }) {
   const customStyles = {
     control: (base) => ({
       ...base,
-      width: '150px',
-      minHeight: '40px',
+      width: '8em',
+      minHeight: '2em',
     }),
     menu: (base) => ({
       ...base,
-      width: '150px',
+      width: '8em',
     }),
   };
 
@@ -39,6 +39,7 @@ function SeletorMoedas({ moedas, selected, onChange }) {
       onChange={(option) => onChange(option.value)}
       options={options}
       styles={customStyles}
+      isSearchable={false}
       getOptionLabel={(e) => e.label}
       className="select-monedas"
     />
